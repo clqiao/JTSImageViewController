@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -13,34 +13,58 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYp-7P-jxw">
-                                <rect key="frame" x="23" y="110" width="274" height="180"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Kl-wT-5j6" userLabel="demo big gif" customClass="YLImageView">
+                                <rect key="frame" x="20" y="28" width="280" height="210"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="EA2-7y-COY"/>
+                                    <constraint firstAttribute="height" constant="210" id="VUW-Do-pAs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="npm-nF-66S" userLabel="demo small gif" customClass="YLImageView">
+                                <rect key="frame" x="20" y="246" width="136" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="banecat.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="2es-kP-JSn"/>
+                                    <constraint firstAttribute="width" constant="136" id="dXJ-Tn-abx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qtU-bC-c34" userLabel="demo jpg" customClass="YLImageView">
+                                <rect key="frame" x="164" y="246" width="136" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="62w-au-e7g"/>
+                                    <constraint firstAttribute="width" constant="136" id="wSS-lu-98u"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Kl-wT-5j6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="2gk-G8-fQ4"/>
+                            <constraint firstItem="5Kl-wT-5j6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="8ac-XV-0kh"/>
+                            <constraint firstItem="npm-nF-66S" firstAttribute="top" secondItem="5Kl-wT-5j6" secondAttribute="bottom" constant="8" id="DoY-G0-jm9"/>
+                            <constraint firstItem="npm-nF-66S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Mlh-Bu-E81"/>
+                            <constraint firstItem="qtU-bC-c34" firstAttribute="top" secondItem="5Kl-wT-5j6" secondAttribute="bottom" constant="8" id="Pfi-Ef-nxx"/>
+                            <constraint firstAttribute="trailing" secondItem="qtU-bC-c34" secondAttribute="trailing" constant="20" id="oMm-w8-OLh"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="bigImageButton" destination="cYp-7P-jxw" id="zdR-f9-LfN"/>
+                        <outlet property="bigGifImageView" destination="5Kl-wT-5j6" id="AvH-tg-etS"/>
+                        <outlet property="jpgImageView" destination="qtU-bC-c34" id="FTu-s9-595"/>
+                        <outlet property="smallGifImageView" destination="npm-nF-66S" id="HhT-d0-ViY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="banecat.jpg" width="2197" height="1450"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

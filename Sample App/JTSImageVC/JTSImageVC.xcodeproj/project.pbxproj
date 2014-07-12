@@ -26,8 +26,14 @@
 		7F9A793C18E75593000CAA69 /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A793B18E75593000CAA69 /* JTSSimpleImageDownloader.m */; };
 		7F9A793F18E755F6000CAA69 /* JTSAnimatedGIFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A793E18E755F6000CAA69 /* JTSAnimatedGIFUtility.m */; };
 		7F9A794218E75712000CAA69 /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A794118E75712000CAA69 /* UIImage+JTSImageEffects.m */; };
-		7FE0848218E7C5C600F2F6B4 /* banecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE0848118E7C5C600F2F6B4 /* banecat.jpg */; };
 		7FE95B4E18EE0E8100F18370 /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE95B4D18EE0E8100F18370 /* UIApplication+JTSImageViewController.m */; };
+		9A8ED4A31970D63900598A6E /* banecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8ED49F1970D63900598A6E /* banecat.jpg */; };
+		9A8ED4A41970D63900598A6E /* demo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9A8ED4A01970D63900598A6E /* demo1.gif */; };
+		9A8ED4A51970D63900598A6E /* demo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9A8ED4A11970D63900598A6E /* demo2.gif */; };
+		9A8ED4A61970D63900598A6E /* demo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8ED4A21970D63900598A6E /* demo3.jpg */; };
+		9A8ED4AD1970D90200598A6E /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8ED4A91970D90200598A6E /* YLGIFImage.m */; };
+		9A8ED4AE1970D90200598A6E /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8ED4AC1970D90200598A6E /* YLImageView.m */; };
+		9A8ED4B019713F2000598A6E /* joy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9A8ED4AF19713F2000598A6E /* joy.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +76,18 @@
 		7F9A793E18E755F6000CAA69 /* JTSAnimatedGIFUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTSAnimatedGIFUtility.m; path = ../../../Source/JTSAnimatedGIFUtility.m; sourceTree = "<group>"; };
 		7F9A794018E75712000CAA69 /* UIImage+JTSImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+JTSImageEffects.h"; path = "../../../Source/UIImage+JTSImageEffects.h"; sourceTree = "<group>"; };
 		7F9A794118E75712000CAA69 /* UIImage+JTSImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+JTSImageEffects.m"; path = "../../../Source/UIImage+JTSImageEffects.m"; sourceTree = "<group>"; };
-		7FE0848118E7C5C600F2F6B4 /* banecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banecat.jpg; sourceTree = "<group>"; };
 		7FE95B4C18EE0E8100F18370 /* UIApplication+JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+JTSImageViewController.h"; path = "../../../Source/UIApplication+JTSImageViewController.h"; sourceTree = "<group>"; };
 		7FE95B4D18EE0E8100F18370 /* UIApplication+JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+JTSImageViewController.m"; path = "../../../Source/UIApplication+JTSImageViewController.m"; sourceTree = "<group>"; };
+		9A8ED49F1970D63900598A6E /* banecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banecat.jpg; sourceTree = "<group>"; };
+		9A8ED4A01970D63900598A6E /* demo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo1.gif; sourceTree = "<group>"; };
+		9A8ED4A11970D63900598A6E /* demo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo2.gif; sourceTree = "<group>"; };
+		9A8ED4A21970D63900598A6E /* demo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo3.jpg; sourceTree = "<group>"; };
+		9A8ED4A81970D90200598A6E /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		9A8ED4A91970D90200598A6E /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		9A8ED4AA1970D90200598A6E /* YLGIFImageInSwiftProjectDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLGIFImageInSwiftProjectDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A8ED4AB1970D90200598A6E /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		9A8ED4AC1970D90200598A6E /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		9A8ED4AF19713F2000598A6E /* joy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joy.gif; path = ../../../YLGIFImage/YLGIFImageDemo/YLGIFImageDemo/joy.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +117,7 @@
 		7F9A78F218E754A7000CAA69 = {
 			isa = PBXGroup;
 			children = (
+				9A8ED4A71970D90200598A6E /* YLGIFImage */,
 				7F9A793318E754D9000CAA69 /* Source */,
 				7F9A790418E754A7000CAA69 /* Sample App */,
 				7F9A792318E754A7000CAA69 /* Sample App Tests */,
@@ -133,7 +149,7 @@
 		7F9A790418E754A7000CAA69 /* Sample App */ = {
 			isa = PBXGroup;
 			children = (
-				7FE0848118E7C5C600F2F6B4 /* banecat.jpg */,
+				9A8ED49E1970D63900598A6E /* demo-images */,
 				7F9A790D18E754A7000CAA69 /* JTSAppDelegate.h */,
 				7F9A790E18E754A7000CAA69 /* JTSAppDelegate.m */,
 				7F9A791018E754A7000CAA69 /* Main.storyboard */,
@@ -194,6 +210,31 @@
 			);
 			name = Source;
 			path = JTSImageVC;
+			sourceTree = "<group>";
+		};
+		9A8ED49E1970D63900598A6E /* demo-images */ = {
+			isa = PBXGroup;
+			children = (
+				9A8ED4AF19713F2000598A6E /* joy.gif */,
+				9A8ED49F1970D63900598A6E /* banecat.jpg */,
+				9A8ED4A01970D63900598A6E /* demo1.gif */,
+				9A8ED4A11970D63900598A6E /* demo2.gif */,
+				9A8ED4A21970D63900598A6E /* demo3.jpg */,
+			);
+			path = "demo-images";
+			sourceTree = SOURCE_ROOT;
+		};
+		9A8ED4A71970D90200598A6E /* YLGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				9A8ED4A81970D90200598A6E /* YLGIFImage.h */,
+				9A8ED4A91970D90200598A6E /* YLGIFImage.m */,
+				9A8ED4AA1970D90200598A6E /* YLGIFImageInSwiftProjectDemo-Bridging-Header.h */,
+				9A8ED4AB1970D90200598A6E /* YLImageView.h */,
+				9A8ED4AC1970D90200598A6E /* YLImageView.m */,
+			);
+			name = YLGIFImage;
+			path = ../../YLGIFImage/YLGIFImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +314,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE0848218E7C5C600F2F6B4 /* banecat.jpg in Resources */,
+				9A8ED4A31970D63900598A6E /* banecat.jpg in Resources */,
 				7F9A791718E754A7000CAA69 /* Images.xcassets in Resources */,
 				7F9A790918E754A7000CAA69 /* InfoPlist.strings in Resources */,
+				9A8ED4A41970D63900598A6E /* demo1.gif in Resources */,
+				9A8ED4A61970D63900598A6E /* demo3.jpg in Resources */,
+				9A8ED4B019713F2000598A6E /* joy.gif in Resources */,
+				9A8ED4A51970D63900598A6E /* demo2.gif in Resources */,
 				7F9A791218E754A7000CAA69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8ED4AE1970D90200598A6E /* YLImageView.m in Sources */,
 				7F9A793918E75558000CAA69 /* JTSImageInfo.m in Sources */,
 				7FE95B4E18EE0E8100F18370 /* UIApplication+JTSImageViewController.m in Sources */,
 				7F9A791518E754A7000CAA69 /* JTSViewController.m in Sources */,
@@ -304,6 +350,7 @@
 				7F9A793F18E755F6000CAA69 /* JTSAnimatedGIFUtility.m in Sources */,
 				7F9A793618E75541000CAA69 /* JTSImageViewController.m in Sources */,
 				7F9A790B18E754A7000CAA69 /* main.m in Sources */,
+				9A8ED4AD1970D90200598A6E /* YLGIFImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

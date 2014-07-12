@@ -12,6 +12,8 @@
 #import "UIImage+JTSImageEffects.h"
 #import "UIApplication+JTSImageViewController.h"
 
+#import "YLImageView.h"
+
 ///--------------------------------------------------------------------------------------------------------------------
 /// Definitions
 ///--------------------------------------------------------------------------------------------------------------------
@@ -68,7 +70,7 @@ typedef struct {
 
 // General Info
 @property (strong, nonatomic, readwrite) JTSImageInfo *imageInfo;
-@property (strong, nonatomic, readwrite) UIImage *image;
+@property (strong, nonatomic, readwrite) YLGIFImage *image;
 @property (assign, nonatomic, readwrite) JTSImageViewControllerTransition transition;
 @property (assign, nonatomic, readwrite) JTSImageViewControllerMode mode;
 @property (assign, nonatomic, readwrite) JTSImageViewControllerBackgroundStyle backgroundStyle;
@@ -85,7 +87,7 @@ typedef struct {
 @property (strong, nonatomic) UIView *snapshotView;
 @property (strong, nonatomic) UIView *blurredSnapshotView;
 @property (strong, nonatomic) UIView *blackBackdrop;
-@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) YLImageView *imageView;
 @property (strong, nonatomic) UIScrollView *scrollView;
 @property (strong, nonatomic) UITextView *textView;
 @property (strong, nonatomic) UIProgressView *progressView;
@@ -326,7 +328,7 @@ typedef struct {
     self.scrollView.accessibilityHint = [self accessibilityHintZoomedOut];
     [self.view addSubview:self.scrollView];
     
-    self.imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    self.imageView = [[YLImageView alloc] initWithFrame:self.view.bounds];
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     self.imageView.isAccessibilityElement = NO;
     self.imageView.clipsToBounds = YES;
@@ -1111,14 +1113,15 @@ typedef struct {
 
 #pragma mark - Interface Updates
 
-- (void)updateInterfaceWithImage:(UIImage *)image {
+- (void)updateInterfaceWithImage:(YLGIFImage *)image {
     
     if (image) {
         [self setImage:image];
         [self.imageView setImage:image];
         [self.progressContainer setAlpha:0];
         
-        self.imageView.backgroundColor = [self backgroundColorForImageView];
+        // 这个地方设置背景色会导致crash，原因未知
+       // self.imageView.backgroundColor = [self backgroundColorForImageView];
         
         // Don't update the layouts during a drag.
         if (_flags.isDraggingImage == NO) {

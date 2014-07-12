@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YLImageView.h"
 
 @interface JTSViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *bigImageButton;
+@property (weak, nonatomic) IBOutlet YLImageView *bigGifImageView;
+@property (weak, nonatomic) IBOutlet YLImageView *smallGifImageView;
+@property (weak, nonatomic) IBOutlet YLImageView *jpgImageView;
 
 @end

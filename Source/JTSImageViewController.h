@@ -45,7 +45,7 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
 
 @property (strong, nonatomic, readonly) JTSImageInfo *imageInfo;
 
-@property (strong, nonatomic, readonly) UIImage *image;
+@property (strong, nonatomic, readonly) YLGIFImage *image;
 
 @property (assign, nonatomic, readonly) JTSImageViewControllerMode mode;
 
