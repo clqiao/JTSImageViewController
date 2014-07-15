@@ -326,6 +326,8 @@ typedef struct {
     self.scrollView.isAccessibilityElement = YES;
     self.scrollView.accessibilityLabel = self.accessibilityLabel;
     self.scrollView.accessibilityHint = [self accessibilityHintZoomedOut];
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:self.scrollView];
     
     self.imageView = [[YLImageView alloc] initWithFrame:self.view.bounds];
