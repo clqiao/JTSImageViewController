@@ -9,6 +9,7 @@
 @import UIKit;
 
 #import "JTSImageInfo.h"
+#import "YLImageView.h"
 
 ///--------------------------------------------------------------------------------------------------------------------
 /// Definitions
@@ -89,7 +90,8 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
  */
 - (void)dismiss:(BOOL)animated;
 
-- (void)updateInterfaceWithImage:(YLGIFImage *)image;
+// - (void)updateInterfaceWithImage:(YLGIFImage *)image;
+- (YLImageView *)primaryImageView;
 
 @end
 

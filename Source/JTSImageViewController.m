@@ -12,8 +12,6 @@
 #import "UIImage+JTSImageEffects.h"
 #import "UIApplication+JTSImageViewController.h"
 
-#import "YLImageView.h"
-
 ///--------------------------------------------------------------------------------------------------------------------
 /// Definitions
 ///--------------------------------------------------------------------------------------------------------------------
@@ -1114,6 +1112,9 @@ typedef struct {
 }
 
 #pragma mark - Interface Updates
+- (YLImageView *)primaryImageView {
+    return self.imageView;
+}
 
 - (void)updateInterfaceWithImage:(YLGIFImage *)image {
     
